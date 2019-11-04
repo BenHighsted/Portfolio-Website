@@ -1,0 +1,15 @@
+body {
+  background-color: lightblue;
+  width: 500px;
+}
+
+header {
+    background-color: darkblue;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    width: 1080px;
+    background-color: darkblue;
+}
