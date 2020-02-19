@@ -1,6 +1,4 @@
-/* 
-  Style sheet created by Ben Highsted, for my portfolio website.
-*/
+/* Style sheet created by Ben Highsted, for my portfolio website. */
 
 body, header {
     width: 800px;
@@ -8,7 +6,7 @@ body, header {
     margin-right: auto;
 }
 
-main, header, p, h1 {
+main, header, p, h1, ul, h3{
   font-family: "Arial";
   text-align: left;
 }
@@ -33,6 +31,10 @@ h1 {
   font-size: 38px;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 hr {
   display: inline-block;
   height: 1px;
@@ -49,10 +51,11 @@ hr {
   color: inherit;
 }
 
-#github, #facebook {
+
+#github, #facebook, #linkedin{
   position: relative;
   top: 12px;
-  left: 25px;
+  left: 35px;
   font-size: 30px;
   width: 35px;
   text-align: center;
@@ -67,14 +70,66 @@ hr {
 }
 
 #nav1 {
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 #nav2 {
   padding-left: 50px;
 }
 
+#binary-background {
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 0px;
+  left: 0px;
+}
+
+#binary-background2 {
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 0px;
+  right: 0px;
+}
+
+#binary-background-academic{
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 720px;
+  left: 0px;
+}
+
+#binary-background-academic2{
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 720px;
+  right: 0px;
+}
+
+#binary-background-academic3{
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 1440px;
+  left: 0px;
+}
+
+#binary-background-academic4{
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 1440px;
+  right: 0px;
+}
+
 a:hover {
   position: relative;
   bottom: 5px;
+}
+
+li a:hover {
+  bottom: 0px;
 }
