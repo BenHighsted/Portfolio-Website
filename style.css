@@ -133,3 +133,21 @@ a:hover {
 li a:hover {
   bottom: 0px;
 }
+
+@media (max-width:629px) {
+  img#binary-background {
+    display: none;
+  }
+  img#binary-background2 {
+    display: none;
+  }
+  img#binary-background-academic {
+    display: none;
+  }
+  img#binary-background-academic2 {
+    display: none;
+  }
+  hr{
+    width:1220px;
+  }
+}
