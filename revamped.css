@@ -3,7 +3,7 @@
 img {
     border-radius: 50%;
     width: 250px;
-    border: 10px solid black;
+    border: 10px solid #5CDB95;
     margin-right: auto;
     margin-left: auto;
     margin-top: 25px;
@@ -11,8 +11,8 @@ img {
 }
 
 body {
-    background-color: #f2f2f2;
-    color: black;
+    background-color: #379683;
+    color: #05386B;
     font-family: "Lucida Console", Courier, monospace;
     margin: 0;
 }
@@ -26,6 +26,10 @@ p {
     text-align: center;
 }
 
+.top {
+    margin-top: 10px;
+}
+
 /** style for nav bar */
 .container {
     width: 80%;
@@ -33,7 +37,7 @@ p {
 }
 
 header {
-    background: #e6e6e6;
+    background: #5CDB95;
 }
 
 header::after {
@@ -66,21 +70,21 @@ nav li {
 }
 
 nav a {
-    color: #444;
+    color: #05386B;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
 }
 
 nav a:hover {
-    color: #000;
+    color: #05386B; /** change this to a different color (on hover over text) */
 }
 
 nav a::before {
     content: '';
     display: block;
     height: 5px;
-    background-color: #444;
+    background-color: #05386B;
 
     position: absolute;
     top: 0;
@@ -96,4 +100,9 @@ nav a:hover::before {
 hr {
     margin: 0;
     margin-bottom: 10px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #05386B;
 }
