@@ -9,15 +9,18 @@ Something simple, an image and a small amount of text (could even just be a few 
 
     <head>
         <link rel="stylesheet" href="revamped.css"> <!-- Don't forget to change this when merging revamped with old -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+        
         <title>Revamped Index!</title>
     </head>
 
-    <header> <!-- At the moment, the links dont do anything. Need to add the js to make them jump to element later on -->
+    <header> <!-- Thinking that i'll make the nav bar work differently on mobile as it could be too wide (still need to test) -->
         <div class="container">
             <h1 class="logo"><a href="#">Ben Highsted</a></h1>
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('about');">About</a></li>
                     <li><a href="#">Academic</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
@@ -27,12 +30,35 @@ Something simple, an image and a small amount of text (could even just be a few 
     </header>
 
     <body>
-        <h1 class="top"> Hello, I'm Ben. </h1>
-        <h1> Welcome to my Portfolio website.</h1>
+        <div class="home" id="home">
+            <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
+            <h1 class="top"> Hello, I'm Ben. </h1>
+            <h1> Welcome to my Portfolio website.</h1>
 
-        <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar">
 
-        <p>Use the navigation links to learn more about me.</p>
+            <p>Use the navigation links to learn more about me.</p>
+        </div>
+
+        <div class="about" id="about">
+            <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
+            <h1 class="top"> What up gangsta </h1>
+        </div>
+
+        <div class="academic" id="academic">
+            <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
+            <h1 class="top"> What up gangsta </h1>
+        </div>
+
+        <div class="projects" id="projects">
+            <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
+            <h1 class="top"> What up gangsta </h1>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
+            <h1 class="top"> What up gangsta </h1>
+        </div>
 
         <!-- Thinking of adding the 'Find me on these platforms' area somewhere on the website (maybe in contact?) -->
     </body>

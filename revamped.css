@@ -26,8 +26,21 @@ p {
     text-align: center;
 }
 
-.top {
-    margin-top: 100px;
+.inner-div {
+    min-height:100px;
+}
+
+.home {
+    display: block;
+}
+
+.home, .about, .academic, .projects, .contact {
+    margin: 0;
+    height: 100vh;
+}
+
+.about, .academic, .projects, .contact {
+    display: none;
 }
 
 /** style for nav bar */
