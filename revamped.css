@@ -40,7 +40,7 @@ p {
 }
 
 .about, .academic, .projects, .contact {
-    display: none;
+    /*display: none;*/
 }
 
 /** style for nav bar */

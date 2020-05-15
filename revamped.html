@@ -17,13 +17,13 @@ Something simple, an image and a small amount of text (could even just be a few 
 
     <header> <!-- Thinking that i'll make the nav bar work differently on mobile as it could be too wide (still need to test) -->
         <div class="container">
-            <h1 class="logo"><a href="#">Ben Highsted</a></h1>
+            <h1 class="logo"><a href="#" onclick="return false;" onmousedown="autoScrollTo('home');">Ben Highsted</a></h1>
             <nav>
                 <ul>
                     <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('about');">About</a></li>
-                    <li><a href="#">Academic</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('academic');">Academic</a></li>
+                    <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('projects');">Projects</a></li>
+                    <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('contact');">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,25 +40,35 @@ Something simple, an image and a small amount of text (could even just be a few 
             <p>Use the navigation links to learn more about me.</p>
         </div>
 
+        <hr>
+
         <div class="about" id="about">
             <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
-            <h1 class="top"> What up gangsta </h1>
+            <h1 class="top"> About me: </h1>
         </div>
+
+        <hr>
 
         <div class="academic" id="academic">
             <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
-            <h1 class="top"> What up gangsta </h1>
+            <h1 class="top"> Academic: </h1>
         </div>
+
+        <hr>
 
         <div class="projects" id="projects">
             <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
-            <h1 class="top"> What up gangsta </h1>
+            <h1 class="top"> Projects: </h1>
         </div>
+
+        <hr>
 
         <div class="contact" id="contact">
             <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
-            <h1 class="top"> What up gangsta </h1>
+            <h1 class="top"> Contact: </h1>
         </div>
+
+        <hr>
 
         <!-- Thinking of adding the 'Find me on these platforms' area somewhere on the website (maybe in contact?) -->
     </body>
