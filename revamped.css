@@ -43,6 +43,14 @@ p {
     /*display: none;*/
 }
 
+.academic {
+    text-align: center;
+}
+
+embed {
+    margin-top: 10px;
+}
+
 /** style for nav bar */
 .container {
     width: 80%;
