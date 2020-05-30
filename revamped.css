@@ -19,11 +19,6 @@ body {
 
 h1 {
     margin: 2px;
-    text-align: center;
-}
-
-p {
-    text-align: center;
 }
 
 .inner-div {
@@ -39,8 +34,34 @@ p {
     height: 100vh;
 }
 
-.about, .academic, .projects, .contact {
-    /*display: none;*/
+.home-inner {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.projects-inner {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.project {
+    border: 2px solid #17252A;
+    margin-bottom: 5px;
+}
+
+.contact-inner {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.center {
+    text-align: center;
 }
 
 .academic {

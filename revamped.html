@@ -30,50 +30,123 @@ Something simple, an image and a small amount of text (could even just be a few 
     </header>
 
     <body>
+        <!-- Home Section -->
         <div class="home" id="home">
             <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
-            <h1 class="top"> Hello, I'm Ben. </h1>
-            <h1> Welcome to my Portfolio website.</h1>
+            <h1 class="center"> Hello, I'm Ben. </h1>
+            <h1 class="center"> Welcome to my Portfolio website.</h1>
 
             <img src="images/avatar.jpg" alt="Avatar" class="avatar">
 
-            <p>Use the navigation links to learn more about me.</p>
+            <p class="center">Use the navigation links to learn more about me.</p>
         </div>
 
         <hr>
 
+        <!-- About Section -->
         <div class="about" id="about">
-            <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
-            <h1 class="top"> About me: </h1>
-            <!-- Thinking instead of just listing languages, i'll put images (and maybe links) of those languages in a box. Just think I have to find
-            ways to reduce the wall of text like in the previous one. -->
+            <div class="inner-div"></div>
+            <div class="home-inner">
+                <h1 class="top"> About me: </h1>
+                <p> My name is Ben Highsted. I graduated from The University of Otago on the 11th of 
+                    December with a Bachelor of Science, majoring in Computer Science. </p>
+    
+                <p> Having recently completed my degree, I’m looking forward to using the skills I have gained at University, 
+                    in the IT Industry. I have a particular interest in Software Development, but enjoyed most aspects of IT covered 
+                    during my studies at Otago University. </p>
+    
+                <p> During my time at University, I became proficient in the following programming languages: </p>
+    
+                <ul>
+                    <li> C </li>
+                    <li> Java </li>
+                    <li> Python </li>
+                    <li> JavaScript </li>
+                </ul> 
+    
+                <p> I also have experience in Web Development (HTML, CSS, PHP) and Databases (Such as SQL). </p>
+    
+                <p> While at school, I was a Prefect and Peer Support Leader. During my time at University, I enjoyed working individually 
+                    and as a part of teams. I am able to work under pressure to meet deadlines while paying close attention to detail, 
+                    and still keeping my sense of humour. I enjoyed the problem solving aspects of my course and learning new programming languages. 
+                    I pride myself on being punctual and reliable. </p>
+    
+                <p> My interests include Personal Computers & Computer Gaming, Coding, Pop Culture Movies, 
+                    Church and associated activities, Boating, Water-skiing and Fishing </p>
+            </div>
         </div>
 
         <hr>
 
+        <!-- Academic Section -->
         <div class="academic" id="academic">
             <div class="inner-div"></div>
             <h1 class="top"> Academic: </h1>
 
             <p> Below is my academic transcript from the University of Otago. I graduated on December 11th 2019. </p>
 
-            <!-- Displays my Academic Transcript -->
             <embed src="images/academic-transcript.pdf" width="800px" height="500px" />
         </div>
 
         <hr>
 
+        <!-- Project Section -->
         <div class="projects" id="projects">
             <div class="inner-div"></div>
-            <h1 class="top"> Projects: </h1>
+            <div class="projects-inner">
+                <h1 class="top"> Projects: </h1>
+                <p> Below are some of the programming projects I have completed: </p>
+
+                <div class="project">
+                    <ul>
+                        <li> Built multiple desktop gaming PC’s </li>
+                        <br>
+                        <li> Built a server PC running Ubuntu Linux 18.04 (Bionic Beaver). </li>
+                        <li> Put in place router port forwarding to expose server functions to the internet using password security. </li>
+                        <li> Performing Functions: </li>
+                        <ul>
+                            <li> Samba File Server </li>
+                            <li> Website (<a href=index.html>highsteds.com</a>) </li>
+                            <li> VNC Server (Remote Desktop) </li>
+                            <li> FTP Server </li>
+                            <li> Minecraft Server </li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <ul>
+                        <li>LightsGUI - Created an interactive GUI in Java which users make a light circuit, then they can solve by interacting with the lights, or use the buttons to solve, reset, or show the circuit. (<a href=https://github.com/BenHighsted/LightsGUI>https://github.com/BenHighsted/LightsGUI</a>)
+                    </ul>
+                </div>
+
+                <div class="project">
+                    
+                </div>
+
+                <div class="project">
+                    
+                </div>
+            </div>
+
+            <!-- Thinking i'll have seperate containers for each project maybe? -->
         </div>
 
         <hr>
 
+        <!-- Contact Section -->
         <div class="contact" id="contact">
             <div class="inner-div"></div>
-            <h1 class="top"> Contact: </h1>
-            <!-- Thinking of adding the 'Find me on these platforms' area somewhere on the website (maybe in contact?) -->
+            <div class="contact-inner">
+                <h1> Contact: </h1>
+                <p> Feel free to email me or call me at the places below: </p>
+                <ul>
+                    <li> Phone: 0272085014 </li>
+                    <li> Email: benhigh18@gmail.com </li>
+                </ul>
+                <p> You can also find me on the following platforms: </p>
+                <!-- Need to put my social media stuff here (The images from the previous website, bigger though) -->
+            </div>
         </div>
 
         <hr>
