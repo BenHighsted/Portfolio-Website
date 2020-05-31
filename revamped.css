@@ -73,6 +73,13 @@ embed {
     margin-top: 10px;
 }
 
+#facebook, #linkedin, #github {
+    width: 125px;
+    height: 125px;
+    padding-left: 35px;
+    display: inline-block;
+}
+
 /** style for nav bar */
 .container {
     width: 80%;
