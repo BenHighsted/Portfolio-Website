@@ -1,0 +1,153 @@
+/* Style sheet created by Ben Highsted, for my portfolio website. */
+
+body, header {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main, header, p, h1, ul, h3{
+  font-family: "Arial";
+  text-align: left;
+}
+
+body {
+  background-color: white;
+}
+
+main {
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+  right: 5px;
+}
+
+header{
+  background-color: white;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+hr {
+  display: inline-block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid black;
+  margin: 0;
+  padding: 0; 
+  width: 1440px;
+  margin-left: -320px;
+}
+
+#link {
+  text-decoration: none; 
+  color: inherit;
+}
+
+
+#github, #facebook, #linkedin{
+  position: relative;
+  top: 12px;
+  left: 35px;
+  font-size: 30px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  background: white;
+  color: white;
+  padding-left: 20px;
+}
+
+#nav1, #nav2, h2 {
+  display: inline-block;
+}
+
+#nav1 {
+  margin-left: 80px;
+}
+
+#nav2 {
+  padding-left: 50px;
+}
+
+#binary-background {
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 0px;
+  left: 0px;
+}
+
+#binary-background2 {
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 0px;
+  right: 0px;
+}
+
+#binary-background-academic{
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 720px;
+  left: 0px;
+}
+
+#binary-background-academic2{
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 720px;
+  right: 0px;
+}
+
+#binary-background-academic3{
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 1440px;
+  left: 0px;
+}
+
+#binary-background-academic4{
+  position: absolute;
+  height: 720px;
+  width: 300px;
+  top: 1440px;
+  right: 0px;
+}
+
+a:hover {
+  position: relative;
+  bottom: 5px;
+}
+
+li a:hover {
+  bottom: 0px;
+}
+
+@media (max-width:629px) {
+  img#binary-background {
+    display: none;
+  }
+  img#binary-background2 {
+    display: none;
+  }
+  img#binary-background-academic {
+    display: none;
+  }
+  img#binary-background-academic2 {
+    display: none;
+  }
+  hr{
+    width:1220px;
+  }
+}

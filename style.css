@@ -1,153 +1,156 @@
-/* Style sheet created by Ben Highsted, for my portfolio website. */
+/** Revamped.css contains all the css code for the revamped website */
 
-body, header {
-    width: 800px;
-    margin-left: auto;
+.avatar {
+    border-radius: 50%;
+    width: 250px;
+    border: 10px solid #17252A;
     margin-right: auto;
-}
-
-main, header, p, h1, ul, h3{
-  font-family: "Arial";
-  text-align: left;
+    margin-left: auto;
+    margin-top: 25px;
+    display: block;
 }
 
 body {
-  background-color: white;
-}
-
-main {
-  background-color: white;
-  text-align: center;
-  margin: 0 auto;
-  right: 5px;
-}
-
-header{
-  background-color: white;
-  margin: 0 auto;
+    background-color: #3AAFA9;
+    color: white;
+    font-family: "Lucida Console", Courier, monospace;
+    margin: 0;
 }
 
 h1 {
-  font-size: 38px;
+    margin: 2px;
 }
 
-h3 {
-  font-size: 24px;
+.inner-div {
+    min-height:100px;
 }
 
-hr {
-  display: inline-block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid black;
-  margin: 0;
-  padding: 0; 
-  width: 1440px;
-  margin-left: -320px;
+.home {
+    display: block;
 }
 
-#link {
-  text-decoration: none; 
-  color: inherit;
+.home, .about, .academic, .projects, .contact {
+    margin: 0;
+    height: 100vh;
 }
 
-
-#github, #facebook, #linkedin{
-  position: relative;
-  top: 12px;
-  left: 35px;
-  font-size: 30px;
-  width: 35px;
-  text-align: center;
-  text-decoration: none;
-  background: white;
-  color: white;
-  padding-left: 20px;
+.home-inner {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
-#nav1, #nav2, h2 {
-  display: inline-block;
+.projects-inner {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
-#nav1 {
-  margin-left: 80px;
+.project {
+    border: 2px solid #17252A;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 
-#nav2 {
-  padding-left: 50px;
+.contact-inner {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
-#binary-background {
-  position: absolute;
-  height: 720px;
-  width: 300px;
-  top: 0px;
-  left: 0px;
+.center {
+    text-align: center;
 }
 
-#binary-background2 {
-  position: absolute;
-  height: 720px;
-  width: 300px;
-  top: 0px;
-  right: 0px;
+.academic {
+    text-align: center;
 }
 
-#binary-background-academic{
-  position: absolute;
-  height: 720px;
-  width: 300px;
-  top: 720px;
-  left: 0px;
+embed {
+    margin-top: 10px;
 }
 
-#binary-background-academic2{
-  position: absolute;
-  height: 720px;
-  width: 300px;
-  top: 720px;
-  right: 0px;
+#facebook, #linkedin, #github {
+    width: 125px;
+    height: 125px;
+    padding-left: 35px;
+    display: inline-block;
 }
 
-#binary-background-academic3{
-  position: absolute;
-  height: 720px;
-  width: 300px;
-  top: 1440px;
-  left: 0px;
+/** style for nav bar */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-#binary-background-academic4{
-  position: absolute;
-  height: 720px;
-  width: 300px;
-  top: 1440px;
-  right: 0px;
+header {
+    background: #17252A;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
 
-a:hover {
-  position: relative;
-  bottom: 5px;
+header::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
-li a:hover {
-  bottom: 0px;
+.logo {
+    float: left;
+    padding: 10px 0;
 }
 
-@media (max-width:629px) {
-  img#binary-background {
-    display: none;
-  }
-  img#binary-background2 {
-    display: none;
-  }
-  img#binary-background-academic {
-    display: none;
-  }
-  img#binary-background-academic2 {
-    display: none;
-  }
-  hr{
-    width:1220px;
-  }
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white; /** change this to a different color (on hover over text) */
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
 }
