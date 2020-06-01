@@ -37,11 +37,9 @@ function hideDivs(el){
     }, 1000);
 }
 
-
-//Something along this line of code to make it so on scroll you go one div in that direction
-
 var el = window.addEventListener("wheel", event => myFunction());//console.info(event.deltaY));
 function myFunction() {
+    alert(amountScrolled());
     if(el > 0){
 
     }else if (el < 0){
