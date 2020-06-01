@@ -37,12 +37,16 @@ function hideDivs(el){
     }, 1000);
 }
 
-var el = window.addEventListener("wheel", event => myFunction());//console.info(event.deltaY));
-function myFunction() {
-    alert(amountScrolled());
-    if(el > 0){
+window.addEventListener("wheel", event => myFunction(event.deltaY));
 
-    }else if (el < 0){
+function myFunction(scrollAmount) {
+    console.log(scrollAmount);
+    pagePercentage = amountScrolled();
 
+    // - is up, + is down
+    if(scrollAmount > 0){
+        console.log("Scrolled down.");
+    }else if (scrollAmount < 0){
+        console.log("Scrolled up.");
     }   
 }
