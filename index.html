@@ -11,8 +11,9 @@ Something simple, an image and a small amount of text (could even just be a few 
         <link rel="stylesheet" href="style.css"> <!-- Don't forget to change this when merging revamped with old -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="index.js"></script>
+        <script src="scroll.js"></script>
         
-        <title>Revamped Index!</title>
+        <title>Ben Highsted's Website</title>
     </head>
 
     <header> <!-- Thinking that i'll make the nav bar work differently on mobile as it could be too wide (still need to test) -->
@@ -30,6 +31,12 @@ Something simple, an image and a small amount of text (could even just be a few 
     </header>
 
     <body>
+        <span class="dot" id="dot"></span>
+        <span class="dot" id="dot1"></span>
+        <span class="dot" id="dot2"></span>
+        <span class="dot" id="dot3"></span>
+        <span class="dot" id="dot4"></span>
+
         <!-- Home Section -->
         <div class="home" id="home">
             <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
@@ -40,8 +47,6 @@ Something simple, an image and a small amount of text (could even just be a few 
 
             <p class="center">Use the navigation links to learn more about me.</p>
         </div>
-
-        <hr>
 
         <!-- About Section -->
         <div class="about" id="about">
@@ -76,8 +81,6 @@ Something simple, an image and a small amount of text (could even just be a few 
             </div>
         </div>
 
-        <hr>
-
         <!-- Academic Section -->
         <div class="academic" id="academic">
             <div class="inner-div"></div>
@@ -87,8 +90,6 @@ Something simple, an image and a small amount of text (could even just be a few 
 
             <embed src="images/academic-transcript.pdf" width="800px" height="500px" />
         </div>
-
-        <hr>
 
         <!-- Project Section -->
         <div class="projects" id="projects">
@@ -136,8 +137,6 @@ Something simple, an image and a small amount of text (could even just be a few 
             <!-- Thinking i'll have seperate containers for each project maybe? -->
         </div>
 
-        <hr>
-
         <!-- Contact Section -->
         <div class="contact" id="contact">
             <div class="inner-div"></div>
@@ -155,6 +154,5 @@ Something simple, an image and a small amount of text (could even just be a few 
             </div>
         </div>
 
-        <hr>
     </body>
 </html>
