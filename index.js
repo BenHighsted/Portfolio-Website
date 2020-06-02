@@ -49,4 +49,28 @@ function myFunction(scrollAmount) {
     }else if (scrollAmount < 0){
         console.log("Scrolled up.");
     }   
+
+    if(pagePercentage < 25){
+        ResetColors();
+        document.getElementById("dot0").style.backgroundColor = "Black";
+    }else if(pagePercentage > 25 && pagePercentage < 50){
+        ResetColors();
+        document.getElementById("dot1").style.backgroundColor = "Black";
+    }else if(pagePercentage > 50 && pagePercentage < 75){
+        ResetColors();
+        document.getElementById("dot2").style.backgroundColor = "Black";
+    }else if(pagePercentage > 75 && pagePercentage < 100){
+        ResetColors();
+        document.getElementById("dot3").style.backgroundColor = "Black";
+    }else if(pagePercentage == 100){
+        ResetColors();
+        document.getElementById("dot4").style.backgroundColor = "Black";
+    }
+}
+
+function ResetColors(){
+    for(var i = 0; i < 5; i++){
+        var dot = "dot" + i;
+        document.getElementById(dot).style.backgroundColor = "White";
+    }
 }
