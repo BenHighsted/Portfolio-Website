@@ -11,7 +11,6 @@ Something simple, an image and a small amount of text (could even just be a few 
         <link rel="stylesheet" href="style.css"> <!-- Don't forget to change this when merging revamped with old -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="index.js"></script>
-        <script src="scroll.js"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -34,6 +33,7 @@ Something simple, an image and a small amount of text (could even just be a few 
 
     <body>
         <!-- Home Section -->
+        <div class="bg-image"></div>
         <div class="home" id="home">
             <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
             <h1 class="center"> Hello, I'm Ben. </h1>
@@ -46,10 +46,10 @@ Something simple, an image and a small amount of text (could even just be a few 
 
         <!-- About Section -->
         <div class="about" id="about">
-            <div class="inner-div"></div>
+            <!-- div class="inner-div"></div -->
             <div class="home-inner">
-                <h1 class="top"> About me: </h1>
-                
+                <h1 class="top"> Summary: </h1>
+                <h4> I am a Computer Science graduate currently seeking employment in the IT industry.  </h4>
             </div>
         </div>
 
@@ -79,7 +79,7 @@ Something simple, an image and a small amount of text (could even just be a few 
 
                 <div class="project">
                     <ul>
-                        <li>Sudoku Solver – A C# WPF application which solves Sudoku puzzles that the user can define. It uses a recursive backtracking algorithm to find the solution. If the puzzle is easy the user can see the algorithm working. (<a href="https://github.com/BenHighsted/SudokuSolver">SudokuSolver</a>)</li>
+                        <li>Sudoku Solver – A C# WPF application which solves Sudoku puzzles that the user can define. It uses a recursive backtracking algorithm to find the solution. If the puzzle is easy the user can see the algorithm working. (<a href="https://github.com/BenHighsted/SudokuSolver">Sudoku Solver</a>)</li>
                     </ul>
                 </div>
 
@@ -101,7 +101,7 @@ Something simple, an image and a small amount of text (could even just be a few 
 
         <!-- Contact Section -->
         <div class="contact" id="contact">
-            <div class="inner-div"></div>
+            <!--div class="inner-div"></div-->
             <div class="contact-inner">
                 <h1> Contact: </h1>
                 <p> Feel free to email me or call me at the places below: </p>
