@@ -3,7 +3,7 @@
 .avatar {
     border-radius: 50%;
     width: 250px;
-    border: 10px solid #17252A;
+    border: 10px solid white;
     margin-right: auto;
     margin-left: auto;
     margin-top: 25px;
@@ -11,9 +11,10 @@
 }
 
 body {
-    background-color: black;
-    color: black;
-    font-family: "Lucida Console", Courier, monospace;
+    background-color: #3AAFA9;
+    color: white;
+    /* font-family: "Lucida Console", Courier, monospace; */
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
 }
 
@@ -25,28 +26,25 @@ h1 {
     min-height: 50px;
 }
 
-.home /*.about, .academic, .projects, .contact*/ {
+.home {
     margin: 0;
-    height: 100vh;
-    /* background-image: url(images/code-screen-shot.png); */
+    height: 92vh;
     color: white;
     display: block;
     
     z-index: 1;
-
-    /* filter: blur(1px); */
 }
 
 .bg-image{
     background-image: url("images/code-screen-shot.png");
   
 
-  filter: blur(8px);
+  filter: blur(2px);
   -webkit-filter: blur(2px);
   
   z-index: -1;
 
-  height: 100vh; 
+  height: 92vh; 
   position: absolute;
 
   left: 0;
@@ -55,11 +53,18 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  border: 3px solid black;
 }
 
-.about, .contact{
-    background-color: white;
-    color: black;
+.contact{
+    /* background-color: white; */
+    color: white;
+}
+
+.about {
+    color: white;
+    border: 2px solid black;
 }
 
 .home-inner {
@@ -83,14 +88,14 @@ h1 {
 }
 
 .projects {
-    background-color: white;
+    /* background-color: white; */
 }
 
 .contact-inner {
-    width: 600px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
 }
 
 .center {
@@ -101,8 +106,13 @@ h1 {
     text-align: center;
 }
 
-embed {
-    margin-top: 10px;
+.phone {
+    padding-right: 66px;
+    margin-bottom: 1px;
+}
+
+.email {
+    margin-top: 1px;
 }
 
 #facebook, #linkedin, #github {
