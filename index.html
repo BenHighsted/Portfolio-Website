@@ -1,14 +1,10 @@
-<!-- This file is my idea for the revamped index page of my website -->
-
-<!-- Thinking for the front page, rather than a wall of text (like the current website) I want
-Something simple, an image and a small amount of text (could even just be a few words) -->
-
+<!-- Ben Highsteds portfolio website (http://highsteds.com) -->
 <!DOCTYPE html>
 
 <html>
 
     <head>
-        <link rel="stylesheet" href="style.css"> <!-- Don't forget to change this when merging revamped with old -->
+        <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="index.js"></script>
 
@@ -17,7 +13,7 @@ Something simple, an image and a small amount of text (could even just be a few 
         <title>Ben Highsted's Website</title>
     </head>
 
-    <header> <!-- Thinking that i'll make the nav bar work differently on mobile as it could be too wide (still need to test) -->
+    <header>
         <div class="container">
             <h1 class="logo"><a href="#" onclick="return false;" onmousedown="autoScrollTo('home');">Ben Highsted</a></h1>
             <nav>
@@ -32,10 +28,9 @@ Something simple, an image and a small amount of text (could even just be a few 
     </header>
 
     <body>
-        <!-- Home Section -->
         <div class="bg-image"></div>
         <div class="home" id="home">
-            <div class="inner-div"></div> <!-- This div is used to add a margin without messing up the primary div height -->
+            <div class="inner-div"></div>
             <h1 class="center"> Hello, I'm Ben. </h1>
             <h1 class="center"> Welcome to my Portfolio website.</h1>
 
@@ -44,18 +39,16 @@ Something simple, an image and a small amount of text (could even just be a few 
             <p class="center">Use the navigation links to learn more about me.</p>
         </div>
 
-        <br><br><br>
+        <br><br>
 
-        <!-- About Section -->
         <div class="about" id="about">
-            <div class="inner-div"></div>
             <div class="home-inner">
+                <br>
                 <h1 class="top"> Summary: </h1>
                 <h4> I am a Computer Science graduate currently seeking employment in the IT industry.  </h4>
             </div>
         </div>
 
-        <!-- Project Section -->
         <div class="projects" id="projects">
             <div class="inner-div"></div>
             <div class="projects-inner">
@@ -102,21 +95,22 @@ Something simple, an image and a small amount of text (could even just be a few 
 
         </div>
 
-        <!-- Contact Section -->
         <div class="contact" id="contact">
             <div class="inner-div"></div>
             <div class="contact-inner">
-                <!--h1> Contact: </h1-->
                 <hr>
                 <h4 class="contact-header"> Feel free to contact me using: </h4>
                 <p class="phone"> - Phone: 0272085014 </li>
                 <p class="email"> - Email: benhigh18@gmail.com </li>
                 <p> You can also find me on the following platforms: </p>
-                <a href="https://www.facebook.com/ben.highsted.54"><img src="images/facebook-icon.png" alt="Facebook-Icon" id="facebook"></a>
+                <!-- a href="https://www.facebook.com/ben.highsted.54"><img src="images/facebook-icon.png" alt="Facebook-Icon" id="facebook"></a -->
+                <a href="#" onclick="return false;" onmousedown="redirect('https://www.facebook.com/ben.highsted.54');"><img src="images/facebook-icon.png" alt="Facebook-Icon" id="facebook"></a>
                 <a href="https://www.github.com/BenHighsted"><img src="images/github-icon.png" alt="Github-Icon" id="github"></a>
                 <a href="https://www.linkedin.com/in/ben-highsted-65430a199/"><img src="images/linkedin-icon.png" alt="Linkedin-Icon" id="linkedin"></a>
             </div>
         </div>
+
+        <br><br>
 
     </body>
 </html>

@@ -10,6 +10,8 @@ function autoScrollTo(el) {
     }else{
         console.log("Error: el is null.");
     }
-
-    sleep(1000);
 } 
+
+function redirect(url) {
+    $(location).attr('href', url);
+}
