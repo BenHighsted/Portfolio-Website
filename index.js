@@ -1,5 +1,4 @@
-//holds all the different div id's 
-var pages = ["home", "about", "academic", "projects", "contact"];
+/** index.js holds all the basic functions for the index page of Ben Highsted's portfolio website */
 
 /** Takes the user to the requested div. Scrolls past any other divs on the way. */
 function autoScrollTo(el) {
@@ -10,8 +9,21 @@ function autoScrollTo(el) {
     }else{
         console.log("Error: el is null.");
     }
-} 
+}
 
-function redirect(url) {
-    $(location).attr('href', url);
+/** The following code adds the "return to top" button when a user scrolls down the webpage */
+
+window.onscroll = function() {showButton()};
+
+function showButton() {
+    var returnToTopButton = document.getElementById("topButton");
+    if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+        returnToTopButton.style.display = "block";
+    } else {
+        returnToTopButton.style.display = "none";
+    }
+}
+
+function topButtonPressed() {
+    autoScrollTo('navbar');
 }

@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <h1 class="logo"><a href="#" onclick="return false;" onmousedown="autoScrollTo('home');">Ben Highsted</a></h1>
-            <nav>
+            <nav id="navbar">
                 <ul>
                     <li><a href="images/BenHighsted-CV.pdf">Resume</a></li>
                     <li><a href="images/academic-transcript.pdf">Transcript</a></li>
@@ -28,6 +28,8 @@
     </header>
 
     <body>
+        <button onclick="topButtonPressed();" id="topButton" title="Go To Top">^^</button>
+
         <div class="bg-image"></div>
         <div class="home" id="home">
             <div class="inner-div"></div>
@@ -103,8 +105,7 @@
                 <p class="phone"> - Phone: 0272085014 </li>
                 <p class="email"> - Email: benhigh18@gmail.com </li>
                 <p> You can also find me on the following platforms: </p>
-                <!-- a href="https://www.facebook.com/ben.highsted.54"><img src="images/facebook-icon.png" alt="Facebook-Icon" id="facebook"></a -->
-                <a href="#" onclick="return false;" onmousedown="redirect('https://www.facebook.com/ben.highsted.54');"><img src="images/facebook-icon.png" alt="Facebook-Icon" id="facebook"></a>
+                <a href="https://www.facebook.com/ben.highsted.54"><img src="images/facebook-icon.png" alt="Facebook-Icon" id="facebook"></a>
                 <a href="https://www.github.com/BenHighsted"><img src="images/github-icon.png" alt="Github-Icon" id="github"></a>
                 <a href="https://www.linkedin.com/in/ben-highsted-65430a199/"><img src="images/linkedin-icon.png" alt="Linkedin-Icon" id="linkedin"></a>
             </div>
